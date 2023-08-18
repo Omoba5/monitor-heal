@@ -1,0 +1,18 @@
+PART 1 - BASIC SETUP
++ Create the prometheus.yml config file for prometheus.
++ Create a docker-compose file to setup Prometheus and Grafana containers.
++ Test Prometheus and Grafana on their respective ports; test for connectivity.
++ Add and configure a node_exporter to the docker-compose file.
++ Add and configure a cAdvisor to the docker-compose file.
++ Create a Grafana dashboard for the node_exporter and cAdvisor.
++ Create stress on the server to ensure that metrics are properly generated.
+
+PART 2 - CONNECT ALERTS TO SLACK
++ Create Alert rules for the prometheus server.
++ Add an alertmanager container to the docker-compose file.
++ Generate an incoming webook URL on Slack to be an alert receiver.
++ Create the alertmanager config file containing the Slack Webkook receiver.
++ Add the alertmanager config and rules_files config to the prometheus.yml file
+
+PART 3 - USE ALERTS TO TRIGGER REMEDIATION SCRIPTS
+- Study this https://github.com/prometheus/alertmanager/issues/2046#issuecomment-535072123
